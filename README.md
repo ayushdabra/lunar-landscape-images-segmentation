@@ -2,7 +2,7 @@
 
 ## **Project Status**
 
-Under development
+**UNDER DEVELOPMENT**
 
 ## **Background & Motivation**
 
@@ -35,7 +35,6 @@ Real lunar pictures are also provided alongside the renders in the dataset. Thos
 ![](./images/image_PCAM5.png)
 ![](./images/image_TCAM3.png)
 <p align="center"><i>From left to right: Original Picture, Ground Truth (hand-drawn)</i></p>
-
 
 ### Technical Information
 
@@ -86,11 +85,12 @@ Due to computational constraints, the model is trained on only 5600 render image
 ![](./images/pred0526.png)
 ![](./images/pred1985.png)
 ![](./images/pred2256.png)
+<p align="center"><i>From left to right: Input Image (Render Image), Segmented Image by the model, Ground Truth</i></p>
 
-## **Conclusion**
+## **Conclusions**
 
 * The UNet-VGG16 model is generating decent results, some of the segmentation results are not up to the mark.
-* The model is able to differentiate between rocks (both larger and smaller), sky and the lunar surface, but it can't differentiate between larger and smaller rocks.
+* The model is able to differentiate between rocks (both large and small), sky and the lunar surface, but it can't differentiate between larger and smaller rocks.
 * The model is terrible at segmenting the shadow effects by the rocks, it segments the shadow as sky.
 * A lot more training and fine-tuning is required for the model.
 
